@@ -1,6 +1,7 @@
 import os
-import praw
+
 import dotenv
+import praw
 
 dotenv.load_dotenv()
 
