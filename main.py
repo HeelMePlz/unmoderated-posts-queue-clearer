@@ -33,7 +33,7 @@ def approve_unmoderated_posts(unmoderated_queue, item_count):
         if count == 100 and remaining_posts > 0:
             time.sleep(2)
             print("Reached 100 approvals, restarting the script...")
-            os.execv(sys.executable, ["python"] + sys.argv)
+            os.execv(sys.executable, ["python3"] + sys.argv)
 
         # if no posts remain, end
         if remaining_posts == 0:
