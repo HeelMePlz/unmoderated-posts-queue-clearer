@@ -14,7 +14,7 @@ def get_number_of_unmoderated_posts(unmoderated_queue):
     return item_count
 
 
-def approve_unmoderated_posts(unmoderated_queue, item_count, skip_item):
+def approve_unmoderated_posts(unmoderated_queue, item_count):
     count = 0
     for item in unmoderated_queue:
         # skip posts that are hidden or locked already
